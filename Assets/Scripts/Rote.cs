@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHandler : MonoBehaviour
+public class Rote : MonoBehaviour
 {
-
     // Start is called before the first frame update
     void Start()
     {
@@ -15,13 +14,5 @@ public class EnemyHandler : MonoBehaviour
     void Update()
     {
         
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("RedBullet"))
-        {
-            Destroy(other.gameObject);
-            Destroy(gameObject);
-        }
     }
 }

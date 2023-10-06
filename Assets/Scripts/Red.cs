@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Yellow : MonoBehaviour
+public class EnemyHandler : MonoBehaviour
 {
+
     // Start is called before the first frame update
     public float speed = 1.0f;
 
@@ -11,7 +12,7 @@ public class Yellow : MonoBehaviour
 
     private void Awake()
     {
-        transform.position = new Vector3(11.0f, 1.0f, 11.0f);
+        transform.position = new Vector3(16.0f, 1.0f, -18.0f);
 
         var cylinder = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
         cylinder.transform.localScale = new Vector3(0f, 1.0f, 0f);
@@ -41,13 +42,13 @@ public class Yellow : MonoBehaviour
         }
 
     }
-    private void OnTriggerEnter(Collider other)
+
+private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("YellowBullet"))
+        if (other.CompareTag("RedBullet"))
         {
             Destroy(other.gameObject);
             Destroy(gameObject);
         }
     }
 }
-

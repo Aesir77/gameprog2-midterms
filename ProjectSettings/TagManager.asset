@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Enemy
   - RedBullet
+  - YellowBullet
+  - BlueBullet
+  - BlueEnemy
+  - RedEnemy
+  - YellowEnemy
   layers:
   - Default
   - TransparentFX

@@ -10,7 +10,6 @@ public class PlayerFire : MonoBehaviour
     public float fireRate = 10;
     private float BaseFireRate; 
 
-    public EnemyHandler em;  
 
     // Start is called before the first frame update
     void Start()
